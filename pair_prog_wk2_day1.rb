@@ -100,4 +100,30 @@ end
       def due_date
         return @due_date
       end
+
+      def book_title
+        return @book_title
+      end
+
+      def student_name
+        return @student_name
+      end
+
+      def due_date
+        return @due_date
+      end
+
+      def set_book_title(book_title)
+        @book_title = book_title
+      end
+
+      def set_student_name(student_name)
+        @student_name = student_name
+      end
+
+      def set_due_date(due_date)
+        @due_date = due_date
+      end
+
+
     end

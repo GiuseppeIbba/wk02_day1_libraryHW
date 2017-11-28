@@ -137,7 +137,20 @@ class TestLibrary < MiniTest::Test
     assert_equal(expected, actual)
   end
 
+  def test_set_book_title
+    @library.set_book_title("lord_of_the_rings")
+    assert_equal("lord_of_the_rings", @library.book_title)
+  end
 
+  def test_set_student_name
+    @library.set_student_name("Jeff")
+    assert_equal("Jeff", @library.student_name)
+  end
+
+  def test_set_due_date
+    @library.set_due_date("01/12/16")
+    assert_equal("01/12/16", @library.due_date)
+  end
 
 
 end
