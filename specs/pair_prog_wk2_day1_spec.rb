@@ -115,5 +115,9 @@ end
 
 class TestLibrary < MiniTest::Test
 
-  
+  def setup
+    @Library = Library.new("lord_of_the_rings", "Jeff", "01/12/16")
+  end
+
+
 end

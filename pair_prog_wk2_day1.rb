@@ -82,4 +82,10 @@ end
   class Library
 
 
+    def initialize(book_title, student_name, due_date)
+      @book_title = book_title
+      @student_name = student_name
+      @due_date =  due_date
+
+end
 end
