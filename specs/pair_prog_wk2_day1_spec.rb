@@ -116,8 +116,28 @@ end
 class TestLibrary < MiniTest::Test
 
   def setup
-    @Library = Library.new("lord_of_the_rings", "Jeff", "01/12/16")
+    @library = Library.new("lord_of_the_rings", "Jeff", "01/12/16")
   end
+
+  def test_book_title
+    expected = "lord_of_the_rings"
+    actual = @library.book_title()
+    assert_equal(expected, actual)
+  end
+
+  def test_student_name
+    expected = "Jeff"
+    actual = @library.student_name()
+    assert_equal(expected, actual)
+  end
+
+  def test_due_date
+    expected = "01/12/16"
+    actual = @library.due_date()
+    assert_equal(expected, actual)
+  end
+
+
 
 
 end
