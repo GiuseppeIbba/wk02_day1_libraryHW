@@ -77,6 +77,9 @@ class Team
     @points += 3 if game_result == "won"
   end
 
+end
+
+  class Library
 
 
 end

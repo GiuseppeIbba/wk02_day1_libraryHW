@@ -111,5 +111,9 @@ class TestTeam < MiniTest::Test
     assert_equal(expected, actual)
   end
 
+end
 
+class TestLibrary < MiniTest::Test
+
+  
 end
